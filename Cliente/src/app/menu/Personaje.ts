@@ -7,4 +7,5 @@ export class Personaje {
     genero?: string;
     rol?: string;
     correo?: string;
+    
   }

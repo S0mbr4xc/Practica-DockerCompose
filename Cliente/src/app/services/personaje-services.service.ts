@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Personaje } from '../menu/Personaje';
+
+
 @Injectable({
   providedIn: 'root'
 })

@@ -9,7 +9,7 @@ import { Personaje } from '../menu/Personaje';
 })
 export class PersonajeServicesService {
 
-  private apiUrl = 'business/rs/personaje';
+  private apiUrl = 'business/rs/universidad';
 
   constructor(private http: HttpClient) {}
 

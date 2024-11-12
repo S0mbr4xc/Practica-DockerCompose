@@ -1,4 +1,5 @@
 <div class="personaje-container">
+  <!-- Formulario de Personaje -->
   <div class="personaje-form">
     <h1 class="Agregar">{{ codigos ? 'Editar' : 'Agregar' }}</h1>
     <form [formGroup]="personajeForm">
@@ -44,12 +45,12 @@
       </div>
     </form>
   </div>
-</div>
 
-<div class="personajes-list">
-  <h1>Lista de Personajes</h1>
-  <table>
-    <thead>
+  <!-- Lista de Personajes -->
+  <div class="personajes-list">
+    <h1>Lista de Personajes</h1>
+    <table>
+      <thead>
       <tr>
         <th>Nombre</th>
         <th>Edad</th>
@@ -59,8 +60,8 @@
         <th>Rol</th>
         <th>Correo</th>
       </tr>
-    </thead>
-    <tbody>
+      </thead>
+      <tbody>
       <tr *ngFor="let personaje of personajes" (click)="selected(personaje.codigo)">
         <td>{{ personaje.nombre }}</td>
         <td>{{ personaje.edad }}</td>
@@ -68,7 +69,9 @@
         <td>{{ personaje.peso }}</td>
         <td>{{ personaje.genero }}</td>
         <td>{{ personaje.rol }}</td>
-        <td>{{ personaje.correo}}</td>
+        <td>{{ personaje.correo }}</td>
       </tr>
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+  </div>
+</div>

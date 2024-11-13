@@ -13,7 +13,7 @@
         <property name="javax.persistence.schema-generation.create-source" value="metadata"/>
         <property name="javax.persistence.schema-generation.drop-source" value="metadata"/>
          <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
-         <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/universidadesdb"/>
+         <property name="hibernate.connection.url" value="jdbc:postgresql://baseDeDatos:5432/universidadesdb"/>
          <property name="hibernate.connection.username" value="admin"/>
          <property name="hibernate.connection.password" value="admin"/>
          

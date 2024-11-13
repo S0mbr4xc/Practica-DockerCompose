@@ -5,11 +5,11 @@ FROM quay.io/wildfly/wildfly:30.0.1.Final-jdk17
 COPY standalone-microprofile-jaeger.xml /opt/jboss/wildfly/standalone/configuration/
 
 # Crear usuario de WildFly
-RUN /opt/jboss/wildfly/bin/add-user.sh samuel samuel --silent
+RUN /opt/jboss/wildfly/bin/add-user.sh andrest andrest --silent
 
 # Definir variables de entorno
-ENV WILDFLY_USER samuel
-ENV WILDFLY_PASS samuel
+ENV WILDFLY_USER andrest
+ENV WILDFLY_PASS andrest
 ENV DS_NAME PostgreSQLDS
 ENV DS_USER admin
 ENV DS_PASS admin

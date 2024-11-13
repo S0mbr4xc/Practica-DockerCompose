@@ -1,34 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+/* Contenedor principal */
 .personaje-container {
-  display: block; // Cambiado de flex a block
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
   margin: 20px;
-}
-
-.personajes-list, .personaje-form{
-  width: 100%; /* Reducimos el ancho para dar espacio al formulario */
+  padding: 20px;
+  background-color: #1a1a2e;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 255, 234, 0.2);
+  color: #e0e0e0;
   font-family: 'Roboto', sans-serif;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+/* Contenedor del formulario */
+.personaje-form {
+  width: 48%;
+  background-color: #1f1f38;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 255, 234, 0.2);
 }
 
-th, td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  background-color: #f4f4f4;
-}
-
-tr:hover {
-  background-color: #f4f4f4;
-}
-
+/* Formulario */
 .form-group {
   margin-bottom: 15px;
 }
@@ -36,32 +31,85 @@ tr:hover {
 label {
   display: block;
   margin-bottom: 8px;
+  color: #00e6e6;
+  font-size: 1rem;
 }
 
 input[type="text"] {
-  width: 100%; // Cambiar a 100% para que llene el contenedor
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 100%;
+  padding: 12px;
+  background-color: #161625;
+  border: 1px solid #00ffaa;
+  color: #00ffaa;
+  border-radius: 6px;
   box-sizing: border-box;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+input[type="text"]:focus {
+  border-color: #00ffdd;
+  box-shadow: 0 0 8px #00ffdd;
+}
+
+/* Botones */
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #07a030;
+  padding: 12px 24px;
+  background-color: #0e7bff;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
-  padding: 1rem 4rem;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 button:hover {
-  background-color: #00c943;
+  background-color: #0099ff;
+  box-shadow: 0px 4px 12px rgba(0, 153, 255, 0.6);
+}
+
+/* Contenedor de la lista de personajes */
+.personajes-list {
+  width: 48%;
+  background-color: #1f1f38;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 255, 234, 0.2);
+  overflow-x: auto;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #161625;
+  border: 1px solid #00ffaa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #282846;
+  color: #c7f5ff;
+}
+
+th {
+  background-color: #21213b;
+  color: #00ffa3;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #282846;
 }
